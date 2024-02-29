@@ -1,5 +1,3 @@
 python-dotenv
 langchain
 chainlit
-openai
--e.
