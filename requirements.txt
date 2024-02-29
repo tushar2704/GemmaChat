@@ -1,3 +1,5 @@
-taipy==3.0.0
 python-dotenv
+langchain
+chainlit
+openai
 -e.
