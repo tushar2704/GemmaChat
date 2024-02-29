@@ -1,7 +1,7 @@
 # GemmaChat
-Smart Chat using Gemma model via Ollama, LangChain and Chainlit
+## Smart light weight Chat Bot using Gemma model via Ollama, LangChain and Chainlit
 
-Coming up:Deployment, more feature and custom UI
+#### Coming up:Deployment, more feature and custom UI
 
 
 ## Steps to Replicate 

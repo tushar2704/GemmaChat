@@ -1,14 +1,38 @@
-# Welcome to Chainlit! 🚀🤖
+# GemmaChat
+## Smart light weight Chat Bot using Gemma model via Ollama, LangChain and Chainlit
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+#### Coming up:Deployment, more feature and custom UI
 
-## Useful Links 🔗
 
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
+## Steps to Replicate 
 
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
+1. Fork this repository and create a codespace in GitHub as I showed you in the youtube video OR Clone it locally.
+   ```
+   git clone https://github.com/tushar2704/GemmaChat.git
+   cd GemmaChat
+   ```
 
-## Welcome screen
+2. Create a virtualenv and activate it
+   ```
+   python3 -m venv .venv && source .venv/bin/activate
+   ```
 
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+3. OPTIONAL - Rename example.env to .env with `cp example.env .env`and input the environment variables from [LangSmith](https://smith.langchain.com/). You need to create an account in LangSmith website if you haven't already.
+   ``` 
+   LANGCHAIN_TRACING_V2=true
+   LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
+   LANGCHAIN_API_KEY="your-api-key"
+   LANGCHAIN_PROJECT="your-project"
+   ```
+
+4. Run the following command in the terminal to install necessary python packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+5. Run the following command in your terminal to start the chat UI:
+   ```
+   chainlit run main.py
+   ```
+
+
